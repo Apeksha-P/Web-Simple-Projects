@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dog img{
+    width: 100px;
+    animation-name: dog;
+    animation-duration: 7s;
+}
+.dog{
+    position: relative;
+    top: 650px;
+    overflow: hidden;
+}
+@keyframes dog {
+    100%{
+        transform: translate(1800px);
+        animation-timing-function: linear;
+    }
+}
+.boy img{
+    width: 170px;
+    animation-name: boy;
+    animation-duration: 7s;
+}
+.boy{
+    position: absolute;
+    top: 550px;
+    left: 100px;
+}
+@keyframes boy {
+    100%{
+        transform: translate(1800px);
+        animation-timing-function: linear;
+    }
+}
