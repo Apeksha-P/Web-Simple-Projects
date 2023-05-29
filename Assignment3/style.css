@@ -1,57 +1,108 @@
 body{
     margin: 0;
-    height: 100vh;
+    height: 70vh;
+    width: 100vb;
     background-image: url(bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    overflow: hidden;
 }
 .dog img{
     width: 100px;
     animation-name: dog;
-    animation-duration: 6s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;  
 }
 .dog{
     position: relative;
-    top: 650px;
-    overflow: hidden;
+    top: 550px;
 }
 @keyframes dog {
     100%{
         transform: translate(1540px);
-        animation-timing-function: linear;
+        
     }
 }
 .boy img{
     width: 170px;
     animation-name: boy;
-    animation-duration: 6s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 .boy{
     position: absolute;
-    top: 550px;
+    top: 450px;
     left: 140px;
 }
 @keyframes boy {
     100%{
-        transform: translate(1450px);
-        animation-timing-function: linear;
+        transform: translate(1500px);
     }
 }
 .bird img{
-    width: 100px;
+    width: 80px;
     animation-name: bird;
-    animation-duration: 10s;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 .bird{
     position: absolute;
-    top: 300px;
-    left: 140px;
+    top: 400px;
+    left: 40px;
 }
 @keyframes bird {
     100%{
         transform: translate(800px,-250px);
-        animation-timing-function: linear;
+        
         scale: 0.1;
+    }
+}
+.plan img{
+    width: 250px;
+    animation-name: plan;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.plan{
+    position: absolute;
+    top: 150px;
+    left: 140px;
+}
+@keyframes plan {
+    100%{
+        transform: translate(2300px,-200px);
+        scale: 0.6;
+    }
+}
+.c{
+    position: absolute;
+    top: 450px;
+    left: 1200px;
+
+    
+}
+.c img{
+    width: 20px;
+}
+.cat img{
+    width: 70px;
+    animation-name: cat ;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.cat{
+    position: absolute;
+    top: 650px;
+    left: 300px;
+}
+@keyframes cat {
+    100%{
+        transform: translate(1500px);
     }
 }
